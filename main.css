@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Allura&family=Buda:wght@300&family=Carter+One&family=Fondamento:ital@0;1&family=Fugaz+One&family=Gideon+Roman&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Pattaya&family=Potta+One&family=Quando&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefffe;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: #b4b8c5;
+    margin: 50px 0 50px 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    width: 80%;
+    margin: 20px auto 20px auto;
+}
+
+.color-container {
+    background-color: #ffffff;
+    width: 20%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.color {
+    width: 95%;
+    height: 230px;
+    margin: 5px auto 5px auto;
+    border-radius: 10px;
+}
+
+#color-one {
+    background-color: #c5d1eb;
+}
+
+#color-two {
+    background-color: #92afd7;
+}
+
+#color-three {
+    background-color: #5a7684;
+}
+
+.hex-number {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+button {
+    background-color: #b4b8c5;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    color: #fefffe;
+    border: 1px solid #b4b8c5;
+    padding: 15px 45px 15px 45px;
+    margin-top: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+button:hover {
+    background-color: #8d818c;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        width: 95%;
+    }
+    
+    .color-container {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 380px) { 
+    .color-container {
+        height: 200px;
+    }
+
+    .color {
+        height: 130px;
+    }
+
+    .hex-number {
+        font-size: 16px;
+    }
+}
